@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<div class="grid-container">
+    <div class="r1">
+        <div class="display-4">Quater Details</div>
+        <br>
+        <div class="qd">
+            Quarter Details available of:
+            <span class="badge">Q3 2018</span> &nbsp;
+            <span class="badge">Q4 2018</span> &nbsp;
+            <span class="badge">Q1 2019</span> &nbsp;
+            <span class="badge">Q2 2019</span> &nbsp;
+            <span class="badge">Q3 2019</span> &nbsp;
+            <span class="badge">Q4 2019</span> &nbsp;
+            <span class="badge">Q1 2020</span>
+        </div>
+
+        <!-- implement a reactive form that have two input fields and a button to collect the quater and financial year detail -->
+
+        <form [formGroup]="quaterFor">
+            <div>
+                <label class="qd" for="Quater">Quater: </label>
+                <input id="Quater" type="text" formControlName="quater">
+
+                <label for="Financial-year">&nbsp; Financial Year: &nbsp;</label>
+                <input id="Financial-year" type="text" formControlName="financialYear">
+                &nbsp;
+                <button (click)="getQDetails()">Get Details</button>
+            </div>
+        </form>
+
+    </div>
+    <!-- implement a table to show the details of the quater selected if the quater detail is available -->
+    <div *ngIf="showTable" class="table">
+        <table mat-table [dataSource]="elementData" class="table-bordered">
+                      
+            <ng-container matColumnDef="quarter">
+              <th *matHeaderCellDef class="th"> Quarter </th>
+              <td *matCellDef="let element"> {{element.quater}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="sales">
+              <th *matHeaderCellDef class="th"> Sales </th>
+              <td *matCellDef="let element"> {{element.result.sales}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="otherIncome">
+                <th *matHeaderCellDef class="th"> Other Income </th>
+                <td *matCellDef="let element"> {{element.result.otherIncome}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="grossProfit">
+                <th *matHeaderCellDef class="th"> Gross Profit </th>
+                <td *matCellDef="let element"> {{element.result.grossProfit}} </td>
+              </ng-container>
+            
+              <ng-container matColumnDef="Depreciation">
+                <th *matHeaderCellDef class="th"> Depreciation </th>
+                <td *matCellDef="let element"> {{element.result.Depreciation}} </td>
+              </ng-container>
+        
+              <ng-container matColumnDef="Interest">
+                <th *matHeaderCellDef class="th"> Interest </th>
+                <td *matCellDef="let element"> {{element.result.Interest}} </td>
+              </ng-container>
+              
+              <ng-container matColumnDef="Tax">
+                <th *matHeaderCellDef class="th"> Tax </th>
+                <td *matCellDef="let element"> {{element.result.Tax}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="netProfit">
+                <th *matHeaderCellDef class="th"> Net Profit </th>
+                <td *matCellDef="let element"> {{element.result.netProfit}} </td>
+              </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+          
+          
+
+    </div>
+    <div *ngIf="showError" class="error">
+        <h4><span class="fas fa-cat"></span> {{errorMessage}}</h4>
+    </div>
+</div>

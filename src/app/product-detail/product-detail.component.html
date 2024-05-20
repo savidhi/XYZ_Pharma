@@ -1,0 +1,30 @@
+<div>
+  <!-- code here to display the full details of the specific product as card -->
+  <mat-card class="card" *ngFor="let product of productDetail">
+    <div>
+      <mat-card-header class="card-header">
+        <mat-card-title><h1>{{product.name}}</h1></mat-card-title>
+      </mat-card-header>
+    </div>
+    <mat-card-content class="card-body">
+      <br>
+      <p><b>Salt Compostion:</b>
+        <br>{{product.saltCompostion}}
+      </p>
+      <p><b>About:</b>
+        <br>{{product.about}}
+      </p>
+      <p><b>Use:</b>
+        <br>{{product.use}}
+      </p>
+      <p><b>Side Effects:</b>
+        <br>{{product.sideEffects}}
+      </p>
+      <br>
+    </mat-card-content>
+    <mat-card-footer class="card-footer">
+      <p><b>Note: </b> consume as prescibed by Phsycian
+      </p>
+    </mat-card-footer>
+  </mat-card>
+</div>
