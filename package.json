@@ -24,6 +24,8 @@
     "@angular/platform-browser-dynamic": "^17.3.12",
     "@angular/router": "^17.3.12",
     "angular-in-memory-web-api": "~0.17.0",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.0"
@@ -33,6 +35,7 @@
     "@angular/cli": "^17.2.3",
     "@angular/compiler-cli": "^17.3.12",
     "@types/jasmine": "~5.1.0",
+    "@types/jquery": "^3.5.32",
     "@types/node": "^16.11.35",
     "copyfiles": "^2.4.1",
     "jasmine-core": "~5.1.0",

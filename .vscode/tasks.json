@@ -25,6 +25,20 @@
 			"presentation": {
 				"reveal": "silent"
 			}
+		},
+		{
+			"type": "shell",
+			"label": "npm install @types/jquery --force",
+			"command": "npm",
+			"args": [
+				"install",
+				"--save-dev",
+				"@types/jquery",
+				"--force"
+			],
+			"presentation": {
+				"reveal": "silent"
+			}
 		}
 	]
 }
