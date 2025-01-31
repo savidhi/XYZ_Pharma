@@ -10,10 +10,13 @@ import { InvestorsComponent } from './investors/investors.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CheckcasingPipe } from './investors/checkcasing.pipe';
+import { RouterModule } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table'  
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -30,10 +33,13 @@ import { MatTableModule } from '@angular/material/table'
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    RouterModule.forRoot([]),
     MatCardModule,
     MatGridListModule,
     MatSelectModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [CheckcasingPipe],
   bootstrap: [AppComponent]
