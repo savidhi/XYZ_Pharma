@@ -4,4 +4,5 @@ export class Product {
     public about!: string;
     public use!: string;
     public sideEffects!: string;
+    public image!: string;
 }
