@@ -52,8 +52,7 @@ export class ProductsComponent implements OnInit {
   }
 
   viewDetails(val: any) {
-    // do programatically navigation to product-detail component, passing the product selected received as parameter of viewDetails()
-    this.router.navigate(['/productDetail/', val])
+    this.router.navigate(['productDetail', val]);  // Remove the forward slash
   }
 
 }

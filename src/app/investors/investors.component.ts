@@ -19,6 +19,7 @@ export class InvestorsComponent implements OnInit {
   quaterDate!: string;
   displayedColumns: string[] = ['quarter', 'sales', 'otherIncome', 'grossProfit', 'Depreciation', 'Interest', 'Tax', 'netProfit'];
   elementData!: any;
+  availableQuarters: string[] = [];
 
   //Inject the FormBuilder and investorsService, InvestorsService and CheckcasingPipe objects to the constructor
   constructor(private formBuilder: FormBuilder, private investorsService: InvestorsService, private checkcasingPipe: CheckcasingPipe) { }
@@ -29,6 +30,11 @@ export class InvestorsComponent implements OnInit {
       financialYear: new FormControl(''),
     });
     this.showError = false;
+
+    // Fetch available quarters from the service
+    this.investorsService.getQDetails().subscribe((res: any) => {
+      this.availableQuarters = res.map((item: any) => item.quater);
+    });
 
     //Initialize the variable quaterForm with a FormBuilder group method containing the below mentioned form control.
     //quater: required validation
@@ -68,5 +74,20 @@ export class InvestorsComponent implements OnInit {
           this.errorMessage = "Only the above mentioned quater details are currently available";
         }
       });
+  }
+
+  fillQuarterDetails(quarter: string) {
+    // Split the quarter string (e.g., "Q32018" into quarter and year)
+    const quarterNumber = quarter.substring(1, 2); // Gets "3" from "Q32018"
+    const year = quarter.substring(2);  // Gets "2018" from "Q32018"
+    
+    // Update form values
+    this.quaterFor.patchValue({
+      quater: `Q${quarterNumber}`,
+      financialYear: year
+    });
+  
+    // Optionally, trigger the details fetch automatically
+    this.getQDetails();
   }
 }

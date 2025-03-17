@@ -1,65 +1,67 @@
-.grid-container{
+@import '../shared/styles/common.css';
+
+.grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr;
+    gap: 2rem;
 }
-.search{
-    grid-column: 1/1;
-    grid-row: 1/1;
-    padding-top:70px;
-    padding-left:20px; 
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    /* background-color: salmon; */
 
+.search {
+    background: var(--light-text);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
 }
-.product{
-    grid-column:1/ span 2;
-    grid-row: 2/ span 3;
 
-}
-.subgrid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* grid-auto-rows: minmax(100px, auto); */
-    grid-gap:40px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    /* background-color: thistle; */
-}
-.c1{
-    grid-column:1/2;  
-}
-.card{
-    min-width: fit-content;
+.search input {
     width: 400px;
-    padding: 10px;
-    background-color: #66b2b2;
-
+    padding: 12px;
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    margin-right: 1rem;
 }
-.card-img-top{
-    width: 340px;
+
+.subgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.card {
+    background: var(--secondary-color);
+    color: var(--light-text);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.card-image-container {
+    position: relative;
+    width: 100%;
     height: 200px;
-}
-.size{
-    font-size: 35px;
-}
-.btn{
-    background-color:#b2d8d8;
-    color: black;
-}
-input{
-    height: 34px;
-    border: 1px solid black;
-border-radius: 3px;
+    overflow: hidden;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
-.specificsearch{
-    padding-left: 40px;
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.error{
-    padding: 20px;    
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.btn i {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .search input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }

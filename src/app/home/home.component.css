@@ -1,83 +1,126 @@
+/* Main Layout */
 .body {
-    overflow-x: hidden !important;
-    background-color: #ebdfeb;
+    overflow-x: hidden;
+    background-color: var(--background);
 }
-nav {
-    background-color: teal;
-}
-.navbar {
-    border: 0px;
-    border-radius: 0px;
-    background-color: teal;
-    color: white;
-}
-.navLinkAlign {
-    padding-left: 300px;
-}
-li {
-    padding-right: 120px;
-}
-.navtext {
-    color: white;
-}
-.navStyle {
-    margin-left: 150px;
-}
+
+/* Carousel Styles */
 .carouselImage {
     width: 100%;
     height: 580px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
+    padding: 5px;
+    object-fit: cover;
 }
 
-/* Default - Text on the left */
 .carousel-caption {
     position: absolute;
     left: 10%;
     right: auto;
     bottom: 20%;
     text-align: left;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    max-width: 500px;
 }
 
-/* For the second carousel item, move text to the right */
-.carousel-item:nth-child(2) .carousel-caption {
-    left: auto;
-    right: 10%;
-    text-align: right;
+.carousel-caption h5 {
+    font-size: 2rem;
+    color: var(--light-text);
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
-.cardStyle {
-    padding: 20px;
-    background-color: #66b2b2;
-    border: 2px;
-    border-radius: 2px;
+.carousel-caption p {
+    font-size: 1.1rem;
+    color: var(--light-text);
+    line-height: 1.6;
 }
-.home {
-    padding: 20px;
-    font-size: 18px;
+
+/* Content Sections */
+.content-section {
+    padding: 4rem 2rem;
+    background: var(--light-text);
+    margin: 2rem 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
 }
-.grid-container {
+
+.content-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.content-section p {
+    color: var(--text-color);
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+/* Vision & Mission */
+.vision-mission {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-content: space-around;
-    grid-gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
 }
-.one {
-    grid-column: 2/2;
-    grid-row: 1/ span 2;
-    background-color: #66b2b2;
+
+.vision, .mission {
+    background: var(--secondary-color);
+    color: var(--light-text);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
 }
-.two {
-    grid-column: 1/ span 1;
-    background-color: #66b2b2;
+
+.vision h3, .mission h3 {
+    color: var(--light-text);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
 }
-.three {
-    grid-column: 1/ span 1;
-    background-color: #66b2b2;
+
+.vision p, .mission p {
+    color: var(--light-text);
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .carousel-caption {
+        left: 5%;
+        right: 5%;
+        bottom: 10%;
+        max-width: none;
+    }
+
+    .vision-mission {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .carouselImage {
+        height: 400px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .content-section {
+        padding: 2rem 1rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.8rem;
+    }
 }

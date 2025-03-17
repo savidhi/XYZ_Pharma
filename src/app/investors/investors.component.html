@@ -6,13 +6,10 @@
         <br>
         <div class="qd">
             Quarter Details available of:
-            <span class="badge">Q3 2018</span> &nbsp;
-            <span class="badge">Q4 2018</span> &nbsp;
-            <span class="badge">Q1 2019</span> &nbsp;
-            <span class="badge">Q2 2019</span> &nbsp;
-            <span class="badge">Q3 2019</span> &nbsp;
-            <span class="badge">Q4 2019</span> &nbsp;
-            <span class="badge">Q1 2020</span>
+            <br>
+            <span class="badge" *ngFor="let quarter of availableQuarters" (click)="fillQuarterDetails(quarter)">
+                {{quarter}} 
+            </span>
         </div>
 
         <!-- implement a reactive form that have two input fields and a button to collect the quater and financial year detail -->

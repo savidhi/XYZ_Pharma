@@ -1,131 +1,330 @@
 {
-    "products":[{
-        "name": "Tormove",
-        "saltCompostion": "paracetamol (500mg)",
-        "about":"Tormove Tablet is a medicine used to relieve pain and to reduce fever. It is used to treat many conditions such as headache, body ache, toothache and common cold.",
-        "use": ["pain relief", "fever"],
-        "sideEffects": ["dizziness", "lightheadedness"]
-      },
-      {
-        "name": "Citracxt",
-        "saltCompostion": "Cetirizine (10mg)",
-        "about":"Citracxt 10mg Tablet belongs to a group of medicines called antihistamines. It is used to treat various allergic conditions such as hay fever, conjunctivitis and some skin reactions, and reactions to bites and stings. It relieves watery eyes, runny nose, sneezing, and itching.",
-        "use": ["runny nose", "sneezing"],
-        "sideEffects": ["dizziness"]
-      },
-      {
-        "name": "Diastag",
-        "saltCompostion": "loperamide (2mg)",
-        "about":"Diastag Tablet is used in the treatment of diarrhea. It should not be used in patients with dysentery (diarrhea with blood).",
-        "use": ["Diarrhea"],
-        "sideEffects": ["Constipation", "Nausea", "Stomach cramp"]
-      },
-      {
-        "name": "Acifier",
-        "saltCompostion": "Magnesium Hydroxide (0.291g), Aluminium Hydroxide(10mg), Oxetacaine (98mg)",
-        "about":"",
-        "use": ["Acidity","Heartburn,","Stomach ulcers"],
-        "sideEffects": ["Constipation","Diarrhea","Allergic Reaction"]
-      },
-      {
-        "name": "Mensarelief",
-        "saltCompostion": "Dicyclomine (20mg), Paracetamol (500mg)",
-        "about":"Mucaine Gel Mint is a prescription medicine that is used in the treatment of acidity, stomach ulcer and heartburn. It helps in relieving the symptoms of acidity and ulcers such as stomach pain, heartburn or irritation. It also neutralizes excessive acid in the stomach.",
-        "use": ["Abdominal pain"],
-        "sideEffects": ["Sleepiness", "Weakness","Nervousness"]
-      },
-      {
-        "name": "Felimine",
-        "saltCompostion": "Telmisartan (40mg), Metoprolol Succinate (25mg)",
-        "about":"Felimine tablet is a medicine used for treating high blood pressure. By reducing the blood pressure it helps in preventing future heart attack and stroke. Early treatment with this medicine also improves chances of survival in patients of heart attack.",
-        "use": ["Hypertension (high blood pressure)"],
-        "sideEffects": ["Slow heart rate","Weakness","Headache"]
-      }
+  "products": [
+    {
+      "name": "Tormove",
+      "saltCompostion": "paracetamol (500mg)",
+      "about": "Tormove Tablet is a medicine used to relieve pain and to reduce fever. It is used to treat many conditions such as headache, body ache, toothache and common cold.",
+      "use": [
+        "pain relief",
+        "fever"
       ],
-      "quaterInfo":[
-        {
-            "quater": "Q32018",
-            "result": {
-                "sales": 2800156,
-                "otherIncome": 349.7,
-                "grossProfit": 217993.4,
-                "Depreciation": 2992.8,
-                "Interest": 10899.67,
-                "Tax": 27249.2,
-                "netProfit": 176851.7
-            }
-        },
-        {
-            "quater": "Q42018",
-            "result": {
-                "sales":1903562,
-                "otherIncome": 289.58,
-                "grossProfit":177309.7,
-                "Depreciation":3802.8,
-                "Interest":8865.49,
-                "Tax":22163.7,
-                "netProfit":142477.7
-            }
-        },
-        {
-            "quater": "Q12019",
-            "result": {
-                "sales": 1732405,
-                "otherIncome": 416.23,
-                "grossProfit": 182456.1,
-                "Depreciation": 3674.8,
-                "Interest": 9122.8,
-                "Tax": 22807,
-                "netProfit": 146851.5
-            }
-        },
-        {
-            "quater": "Q22019",
-            "result": {
-                "sales": 1689401,
-                "otherIncome": 289.58,
-                "grossProfit": 177309.7,
-                "Depreciation": 3802.8,
-                "Interest": 8865.49,
-                "Tax": 22163.7,
-                "netProfit": 142477.7
-            }
-        },
-        {
-            "quater": "Q32019",
-            "result": {
-                "sales": 1547681,
-                "otherIncome": 126.3,
-                "grossProfit": 100912.4,
-                "Depreciation": 4009.6,
-                "Interest": 5045.62,
-                "Tax": 12614.05,
-                "netProfit": 79245.13
-            }
-        },
-        {
-            "quater": "Q42019",
-            "result": {
-                "sales": 1809213,
-                "otherIncome": 320.5,
-                "grossProfit": 209113.1,
-                "Depreciation": 2988.9,
-                "Interest": 10455.65,
-                "Tax": 26139.14,
-                "netProfit": 169529.4
-            }
-        },
-        {
-            "quater": "Q12020",
-            "result": {
-                "sales": 2187960,
-                "otherIncome": 319.6,
-                "grossProfit": 890567.7,
-                "Depreciation": 1128.5,
-                "Interest": 44528.4,
-                "Tax": 111320.9,
-                "netProfit": 733589.9
-            }
-        }
-    ]
+      "sideEffects": [
+        "dizziness",
+        "lightheadedness"
+      ]
+    },
+    {
+      "name": "Citracxt",
+      "saltCompostion": "Cetirizine (10mg)",
+      "about": "Citracxt 10mg Tablet belongs to a group of medicines called antihistamines. It is used to treat various allergic conditions such as hay fever, conjunctivitis and some skin reactions, and reactions to bites and stings. It relieves watery eyes, runny nose, sneezing, and itching.",
+      "use": [
+        "runny nose",
+        "sneezing"
+      ],
+      "sideEffects": [
+        "dizziness"
+      ]
+    },
+    {
+      "name": "Diastag",
+      "saltCompostion": "loperamide (2mg)",
+      "about": "Diastag Tablet is used in the treatment of diarrhea. It should not be used in patients with dysentery (diarrhea with blood).",
+      "use": [
+        "Diarrhea"
+      ],
+      "sideEffects": [
+        "Constipation",
+        "Nausea",
+        "Stomach cramp"
+      ]
+    },
+    {
+      "name": "Acifier",
+      "saltCompostion": "Magnesium Hydroxide (0.291g), Aluminium Hydroxide(10mg), Oxetacaine (98mg)",
+      "about": "",
+      "use": [
+        "Acidity",
+        "Heartburn,",
+        "Stomach ulcers"
+      ],
+      "sideEffects": [
+        "Constipation",
+        "Diarrhea",
+        "Allergic Reaction"
+      ]
+    },
+    {
+      "name": "Mensarelief",
+      "saltCompostion": "Dicyclomine (20mg), Paracetamol (500mg)",
+      "about": "Mucaine Gel Mint is a prescription medicine that is used in the treatment of acidity, stomach ulcer and heartburn. It helps in relieving the symptoms of acidity and ulcers such as stomach pain, heartburn or irritation. It also neutralizes excessive acid in the stomach.",
+      "use": [
+        "Abdominal pain"
+      ],
+      "sideEffects": [
+        "Sleepiness",
+        "Weakness",
+        "Nervousness"
+      ]
+    },
+    {
+      "name": "Felimine",
+      "saltCompostion": "Telmisartan (40mg), Metoprolol Succinate (25mg)",
+      "about": "Felimine tablet is a medicine used for treating high blood pressure. By reducing the blood pressure it helps in preventing future heart attack and stroke. Early treatment with this medicine also improves chances of survival in patients of heart attack.",
+      "use": [
+        "Hypertension (high blood pressure)"
+      ],
+      "sideEffects": [
+        "Slow heart rate",
+        "Weakness",
+        "Headache"
+      ]
+    },
+    {
+      "name": "Respiclear",
+      "saltCompostion": "Montelukast (10mg), Levocetrizine (5mg)",
+      "about": "Respiclear is used to treat and prevent breathing difficulties, wheezing, chest tightness, and coughing caused by asthma. It also helps in managing seasonal allergies.",
+      "use": [
+        "Asthma",
+        "Seasonal allergies",
+        "Breathing difficulties"
+      ],
+      "sideEffects": [
+        "Headache",
+        "Drowsiness",
+        "Throat irritation"
+      ]
+    },
+    {
+      "name": "Cardioguard",
+      "saltCompostion": "Amlodipine (5mg), Atenolol (50mg)",
+      "about": "Cardioguard is used to treat high blood pressure and chest pain (angina). This medication helps prevent heart attacks and strokes.",
+      "use": [
+        "High blood pressure",
+        "Chest pain",
+        "Heart attack prevention"
+      ],
+      "sideEffects": [
+        "Fatigue",
+        "Dizziness",
+        "Cold hands and feet"
+      ]
+    },
+    {
+      "name": "Diabecontrol",
+      "saltCompostion": "Metformin (500mg), Glimepiride (2mg)",
+      "about": "Diabecontrol is an anti-diabetic medication that helps control blood sugar levels. It combines two medicines that work in different ways to lower blood glucose in patients with type 2 diabetes mellitus.",
+      "use": [
+        "Type 2 diabetes",
+        "Blood sugar control"
+      ],
+      "sideEffects": [
+        "Nausea",
+        "Stomach pain",
+        "Low blood sugar"
+      ]
+    },
+    {
+      "name": "Arthroease",
+      "saltCompostion": "Glucosamine (750mg), Chondroitin (250mg)",
+      "about": "Arthroease is used to treat osteoarthritis, particularly of the knee and hip. It helps reduce joint pain and improve joint function.",
+      "use": [
+        "Joint pain",
+        "Osteoarthritis",
+        "Joint stiffness"
+      ],
+      "sideEffects": [
+        "Mild stomach upset",
+        "Nausea",
+        "Heartburn"
+      ]
+    }
+  ],
+  "quaterInfo": [
+    {
+      "quater": "Q12022",
+      "result": {
+        "sales": 2567890,
+        "otherIncome": 567.8,
+        "grossProfit": 890123.4,
+        "Depreciation": 1234.5,
+        "Interest": 44506.1,
+        "Tax": 111265.4,
+        "netProfit": 733117.4
+      }
+    },
+    {
+      "quater": "Q22022",
+      "result": {
+        "sales": 2645678,
+        "otherIncome": 623.4,
+        "grossProfit": 923456.7,
+        "Depreciation": 1345.6,
+        "Interest": 46172.8,
+        "Tax": 115432.1,
+        "netProfit": 760506.2
+      }
+    },
+    {
+      "quater": "Q32022",
+      "result": {
+        "sales": 2734567,
+        "otherIncome": 678.9,
+        "grossProfit": 956789.0,
+        "Depreciation": 1456.7,
+        "Interest": 47839.4,
+        "Tax": 119598.6,
+        "netProfit": 787894.3
+      }
+    },
+    {
+      "quater": "Q42022",
+      "result": {
+        "sales": 2823456,
+        "otherIncome": 734.5,
+        "grossProfit": 989012.3,
+        "Depreciation": 1567.8,
+        "Interest": 49450.6,
+        "Tax": 123626.5,
+        "netProfit": 814367.4
+      }
+    },
+    {
+      "quater": "Q12023",
+      "result": {
+        "sales": 2890123,
+        "otherIncome": 789.0,
+        "grossProfit": 1012345.6,
+        "Depreciation": 1567.8,
+        "Interest": 50617.3,
+        "Tax": 126543.2,
+        "netProfit": 833617.3
+      }
+    },
+    {
+      "quater": "Q22023",
+      "result": {
+        "sales": 3012456,
+        "otherIncome": 892.5,
+        "grossProfit": 1125678.9,
+        "Depreciation": 1678.9,
+        "Interest": 56234.5,
+        "Tax": 140709.8,
+        "netProfit": 926163.2
+      }
+    },
+    {
+      "quater": "Q32023",
+      "result": {
+        "sales": 3156789,
+        "otherIncome": 967.8,
+        "grossProfit": 1234567.8,
+        "Depreciation": 1789.2,
+        "Interest": 61728.4,
+        "Tax": 154320.9,
+        "netProfit": 1016729.3
+      }
+    },
+    {
+      "quater": "Q42023",
+      "result": {
+        "sales": 3289012,
+        "otherIncome": 1023.4,
+        "grossProfit": 1345678.9,
+        "Depreciation": 1892.3,
+        "Interest": 67283.9,
+        "Tax": 168209.8,
+        "netProfit": 1108293.9
+      }
+    },
+    {
+      "quater": "Q12024",
+      "result": {
+        "sales": 3412345,
+        "otherIncome": 1156.7,
+        "grossProfit": 1456789.0,
+        "Depreciation": 1967.8,
+        "Interest": 72839.4,
+        "Tax": 182098.6,
+        "netProfit": 1199883.2
+      }
+    },
+    {
+      "quater": "Q22024",
+      "result": {
+        "sales": 3567890,
+        "otherIncome": 1234.5,
+        "grossProfit": 1567890.1,
+        "Depreciation": 2045.6,
+        "Interest": 78394.5,
+        "Tax": 195986.2,
+        "netProfit": 1291463.8
+      }
+    },
+    {
+      "quater": "Q32024",
+      "result": {
+        "sales": 3678901,
+        "otherIncome": 1345.6,
+        "grossProfit": 1678901.2,
+        "Depreciation": 2123.4,
+        "Interest": 83945.0,
+        "Tax": 209875.1,
+        "netProfit": 1382957.7
+      }
+    },
+    {
+      "quater": "Q42024",
+      "result": {
+        "sales": 3789012,
+        "otherIncome": 1456.7,
+        "grossProfit": 1789012.3,
+        "Depreciation": 2234.5,
+        "Interest": 89450.6,
+        "Tax": 223643.9,
+        "netProfit": 1473683.3
+      }
+    },
+    {
+      "quater": "Q12025",
+      "result": {
+        "sales": 3901234,
+        "otherIncome": 1567.8,
+        "grossProfit": 1890123.4,
+        "Depreciation": 2345.6,
+        "Interest": 94506.1,
+        "Tax": 236265.4,
+        "netProfit": 1557006.3
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Admin User",
+      "email": "admin@xyzpharma.com",
+      "username": "admin",
+      "password": "admin123"
+    },
+    {
+      "id": 2,
+      "fullName": "Dr. James Wilson",
+      "email": "james.wilson@xyzpharma.com",
+      "username": "jwilson",
+      "password": "jw123456"
+    },
+    {
+      "id": 3,
+      "fullName": "Dr. Emily Chen",
+      "email": "emily.chen@xyzpharma.com",
+      "username": "echen",
+      "password": "ec123456"
+    },
+    {
+      "id": 4,
+      "fullName": "Robert Thompson",
+      "email": "robert.thompson@xyzpharma.com",
+      "username": "rthompson",
+      "password": "rt123456"
+    }
+  ]
 }

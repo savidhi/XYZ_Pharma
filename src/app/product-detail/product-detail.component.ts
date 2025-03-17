@@ -18,8 +18,8 @@ export class ProductDetailComponent implements OnInit {
   productDetail!: Product[];
 
   ngOnInit() {
-    //resolve the route parameter and make a call to the getTabDetail() of productDetailService
-    this.tabletName =  this.route.snapshot.paramMap.get('tabletName');
+    // Change from 'tabletName' to 'name' to match the route parameter
+    this.tabletName = this.route.snapshot.paramMap.get('name');
     this.productDetailService.getTabDetail(this.tabletName).subscribe((res) => {
       this.productDetail = res.filter((item) => item.name === this.tabletName);
     });
